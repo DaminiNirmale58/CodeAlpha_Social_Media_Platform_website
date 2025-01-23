@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialSphere</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="navbar">
+            <div class="logo">SocialSphere</div>
+            <input type="text" placeholder="Search" class="search-bar">
+            <div class="nav-icons">
+                <i class="fas fa-home"></i>
+                <i class="fas fa-user-friends"></i>
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-cog"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hamburger Menu -->
+    <div class="hamburger-container">
+        <div class="hamburger-menu" id="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <button class="close-btn" id="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="user-profile">
+                <img id="profile-avatar" src="img/userprofile.png" alt="User Avatar" class="avatar">
+                <h3 class="username">@Jack</h3>
+                <button class="edit-profile">Edit Profile</button>
+                <div class="followers-following">
+                    <p id="followers-count">Followers: 550</p>
+                    <p id="following-count">Following: 200</p>
+                </div>
+            </div>
+            <ul class="menu">
+                <li><i class="fas fa-home"></i> Home</li>
+                <li><i class="fas fa-user"></i> Profile</li>
+                <li><i class="fas fa-users"></i> Friends</li>
+                <li><i class="fas fa-cog"></i> Settings</li>
+            </ul>
+        </aside>
+
+        <section id="Home">
+            <h2>SocialSphere</h2>
+            <p><b>Your ideas can spark something amazing! Post your thoughts and engage with a community that's ready to
+                    listen.</b></p>
+        </section>
+
+        <!-- Feed Section -->
+        <section class="feed">
+            <h2>Share Your Thoughts</h2>
+            <!-- Create Post -->
+            <div class="create-post">
+                <textarea id="post-content" placeholder="What's on your mind?" required></textarea>
+                <div class="post-actions">
+                    <button class="post-btn">Post</button>
+                </div>
+            </div>
+            <!-- Posts -->
+            <div id="post-list">
+                <!-- Post 1 -->
+                <div class="post">
+                    <div class="post-header">
+                        <img src="img/userprofile.png" alt="User Avatar">
+                        <span class="username">@Jack</span>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+
+    <!-- Suggestions Section -->
+    <aside class="suggestions">
+        <h3>Suggestions for You</h3>
+        <div>
+            <div class="suggestion-item">
+                <img src="img/userprofile2.png" alt="Avatar" class="avatar-small">
+                <p>@user1</p>
+                <button class="follow-btn" data-id="user1" onclick="toggleFollow('user1')">Follow</button>
+            </div>
+            <div class="suggestion-item">
+                <img src="img/userprofile3.jpeg" alt="Avatar" class="avatar-small">
+                <p>@user2</p>
+                <button class="follow-btn" data-id="user2" onclick="toggleFollow('user2')">Follow</button>
+            </div>
+            <div class="suggestion-item">
+                <img src="img/userprofile4.jpeg" alt="Avatar" class="avatar-small">
+                <p>@user3</p>
+                <button class="follow-btn" data-id="user3" onclick="toggleFollow('user3')">Follow</button>
+            </div>
+            <div class="suggestion-item">
+                <img src="img/userprofile5.png" alt="Avatar" class="avatar-small">
+                <p>@user4</p>
+                <button class="follow-btn" data-id="user4" onclick="toggleFollow('user4')">Follow</button>
+            </div>
+        </div>
+    </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- About Us Section -->
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>
+                    SocialSphere is your digital haven to share thoughts, ideas, and experiences. Connect with others,
+                    explore trending topics, and make your voice heard in a community that values expression and
+                    creativity.
+                </p>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/posts">Posts</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information Section -->
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>
+                    <strong>Email:</strong> info@socialsphere.com<br>
+                    <strong>Phone:</strong> +024 2025 2004<br>
+                    <strong>Address:</strong> 1234 Blog Lane, Tech City, USA
+                </p>
+            </div>
+
+            <!-- Social Media Section -->
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="img/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <img src="img/twitter.jpeg" alt="Twitter">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="img/instagram.jpeg" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; SocialSphere
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
