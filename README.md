@@ -1,4 +1,4 @@
-# CodeAlpha_Social_Media_Platform_website
+# Social_Media_Platform_website
 SocialSphere 🌐 
 A dynamic social networking platform to connect, share, and engage with your world. 
 Features: 
